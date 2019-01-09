@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "a28eb8e5-1768-4efb-81b5-07c0c8a8acc2",
+		"name": "api-agenda-ng",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listando-todos-usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/lista-todos-contatos/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lista-todos-contatos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro de usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cadastrar-contato?name=Nicolas&email=nicolas@gmail.com&favorite=n&blocked=n&password=123456",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cadastrar-contato"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Nicolas",
+							"description": "Campo nome"
+						},
+						{
+							"key": "email",
+							"value": "nicolas@gmail.com",
+							"description": "Campo email"
+						},
+						{
+							"key": "favorite",
+							"value": "n",
+							"description": "Enum de 's' ou 'n'"
+						},
+						{
+							"key": "blocked",
+							"value": "n",
+							"description": "Enum de 's' ou 'n'"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "Campo Senha"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/altarar-contato/1?name=Nicolas&email=teste@gmail.com&favorite=s&blocked=n&password=123456&id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"altarar-contato",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Nicolas",
+							"description": "Campo nome"
+						},
+						{
+							"key": "email",
+							"value": "teste@gmail.com",
+							"description": "Campo email"
+						},
+						{
+							"key": "favorite",
+							"value": "s",
+							"description": "Enum de 's' ou 'n'"
+						},
+						{
+							"key": "blocked",
+							"value": "n",
+							"description": "Enum de 's' ou 'n'"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "Campo Senha"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"description": "Campo id"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listando-por-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/lista-por-id/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lista-por-id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
