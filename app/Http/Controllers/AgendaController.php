@@ -21,7 +21,6 @@ class AgendaController extends Controller
     public function index()
     {
         $lista = $this->repositorio->listarTodosUsuarios();
-
         return response()->json($lista);
     }
 
